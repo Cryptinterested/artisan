@@ -19,6 +19,7 @@ export function DocsSearch({ className, ...props }: DocsSearchProps) {
   }
 
   return (
+    
     <form
       onSubmit={onSubmit}
       className={cn("relative w-full", className)}
