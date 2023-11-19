@@ -31,6 +31,33 @@ export default async function MarketingLayout({
               Login
             </Link>
               */}
+            <Link
+              href="_blank"
+              className={cn(
+                buttonVariants({ variant: "secondary", size: "sm" }),
+                "px-4", "mr-2"
+              )}
+            >
+              Twitter
+            </Link>
+            <Link
+              href="_blank"
+              className={cn(
+                buttonVariants({ variant: "secondary", size: "sm" }),
+                "px-4", "mr-2"
+              )}
+            >
+              Discord
+            </Link>
+            <Link
+              href="_blank"
+              className={cn(
+                buttonVariants({ variant: "secondary", size: "sm" }),
+                "px-4", "mr-2"
+              )}
+            >
+              LinkedIn
+            </Link>
           </nav>
         </div>
       </header>

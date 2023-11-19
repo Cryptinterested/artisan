@@ -21,6 +21,7 @@ export const docsConfig: DocsConfig = {
         },
       ],
     },
+    /**
     {
       title: "Documentation",
       items: [
@@ -52,6 +53,7 @@ export const docsConfig: DocsConfig = {
         },
       ],
     },
+    */
     {
       title: "Private mempool",
       items: [
@@ -60,26 +62,97 @@ export const docsConfig: DocsConfig = {
           href: "/docs/privatemempool",
         },
         {
-          title: "Contentlayer",
-          href: "/docs/in-progress",
+          title: "Motivations",
+          href: "/docs/privatemempool/motivations",
+        },
+        {
+          title: "Technical Specifications",
+          href: "/docs/privatemempool/technical-specifications",
           disabled: true,
         },
         {
-          title: "Components",
-          href: "/docs/documentation/components",
+          title: "How to submit on-chain operations and being rewarded?",
+          href: "/docs/privatemempool/how-to",
+        }
+      ],
+    },
+    {
+      title: "Bid system",
+      items: [
+        {
+          title: "Introduction",
+          href: "/docs/bidsystem",
         },
         {
-          title: "Code Blocks",
-          href: "/docs/documentation/code-blocks",
+          title: "Motivations",
+          href: "/docs/bidsystem/motivations",
         },
         {
-          title: "Style Guide",
-          href: "/docs/documentation/style-guide",
+          title: "Technical Specifications",
+          href: "/docs/bidsystem/technical-specifications",
+        },
+      ],
+    },
+    {
+      title: "Bundle Sender",
+      items: [
+        {
+          title: "Introduction",
+          href: "/docs/bundlesender",
         },
         {
-          title: "Search",
-          href: "/docs/in-progress",
-          disabled: true,
+          title: "Motivations",
+          href: "/docs/bundlesender/motivations",
+        },
+        {
+          title: "Technical Specifications",
+          href: "/docs/bundlesender/technical-specifications",
+        },
+      ],
+    },
+    {
+      title: "Artisan Builder",
+      items: [
+        {
+          title: "Introduction",
+          href: "/docs/artisanbuilder",
+        },
+        {
+          title: "Motivations",
+          href: "/docs/artisanbuilder/motivations",
+        },
+        {
+          title: "Technical Specifications",
+          href: "/docs/artisanbuilder/technical-specifications",
+        },
+      ],
+    },
+    {
+      title: "Artisan DAO",
+      items: [
+        {
+          title: "Introduction",
+          href: "/docs/artisandao",
+        },
+        {
+          title: "Motivations",
+          href: "/docs/artisandao/motivations",
+        },
+        {
+          title: "Artisan DAO architecture & contracts",
+          href: "/docs/artisandao/architecture-contracts",
+        },
+        {
+          title: "Initial distribution",
+          href: "/docs/artisandao/initial-distribution",
+        },
+        {
+          title: "Multisig contracts & adresses",
+          href: "/docs/artisandao/msig-addresses",
+        },
+        {
+          title: "Voting process",
+          href: "/docs/artisandao/voting-process",
         },
       ],
     },
@@ -133,31 +206,6 @@ export const docsConfig: DocsConfig = {
         },
         {
           title: "API Routes",
-          href: "/docs/in-progress",
-          disabled: true,
-        },
-      ],
-    },
-    {
-      title: "Marketing Site",
-      items: [
-        {
-          title: "Introduction",
-          href: "/docs/in-progress",
-          disabled: true,
-        },
-        {
-          title: "File Structure",
-          href: "/docs/in-progress",
-          disabled: true,
-        },
-        {
-          title: "Tailwind CSS",
-          href: "/docs/in-progress",
-          disabled: true,
-        },
-        {
-          title: "Typography",
           href: "/docs/in-progress",
           disabled: true,
         },

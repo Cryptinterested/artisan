@@ -4,6 +4,7 @@ import { env } from "@/env.mjs"
 import { siteConfig } from "@/config/site"
 import { cn } from "@/lib/utils"
 import { buttonVariants } from "@/components/ui/button"
+import { DashboardConfig } from '../../types/index';
 
 async function getGitHubStars(): Promise<string | null> {
   try {
@@ -118,6 +119,7 @@ export default async function IndexPage() {
             </Link>
           </div>
           <div className="relative overflow-hidden rounded-lg border bg-background p-2">
+            <Link href="/docs/bundlesender">
             <div className="flex h-[180px] flex-col justify-between rounded-md p-6">
               <svg viewBox="0 0 24 24" className="h-12 w-12 fill-current">
                 <path d="M0 12C0 5.373 5.373 0 12 0c4.873 0 9.067 2.904 10.947 7.077l-15.87 15.87a11.981 11.981 0 0 1-1.935-1.099L14.99 12H12l-8.485 8.485A11.962 11.962 0 0 1 0 12Zm12.004 12L24 12.004C23.998 18.628 18.628 23.998 12.004 24Z" />
@@ -129,8 +131,10 @@ export default async function IndexPage() {
                 </p>
               </div>
             </div>
+            </Link>
           </div>
           <div className="relative items-center overflow-hidden rounded-lg border bg-background p-2">
+            <Link href="/docs/artisanbuilder">
             <div className="flex h-[180px] flex-col justify-between rounded-md p-6">
               <svg viewBox="0 0 24 24" className="h-12 w-12 fill-current">
                 <path d="M12.001 4.8c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624C13.666 10.618 15.027 12 18.001 12c3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C16.337 6.182 14.976 4.8 12.001 4.8zm-6 7.2c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624 1.177 1.194 2.538 2.576 5.512 2.576 3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C10.337 13.382 8.976 12 6.001 12z" />
@@ -142,9 +146,10 @@ export default async function IndexPage() {
                 </p>
               </div>
             </div>
+            </Link>
           </div>
-          {/*
           <div className="relative overflow-hidden rounded-lg border bg-background p-2">
+            <Link href="/docs/artisandao">
             <div className="flex h-[180px] flex-col justify-between rounded-md p-6">
               <svg
                 viewBox="0 0 24 24"
@@ -156,13 +161,15 @@ export default async function IndexPage() {
                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
               </svg>
               <div className="space-y-2">
-                <h3 className="font-bold">Authentication</h3>
+                <h3 className="font-bold">Artisan DAO</h3>
                 <p className="text-sm text-muted-foreground">
-                  Authentication using NextAuth.js and middlewares.
+                  The organization that orchestrate the Artisan Ecosystem.
                 </p>
               </div>
             </div>
+            </Link>
           </div>
+          {/*
           <div className="relative overflow-hidden rounded-lg border bg-background p-2">
             <div className="flex h-[180px] flex-col justify-between rounded-md p-6">
               <svg viewBox="0 0 24 24" className="h-12 w-12 fill-current">
@@ -186,7 +193,7 @@ export default async function IndexPage() {
       <section id="open-source" className="container py-8 md:py-12 lg:py-24">
         <div className="mx-auto flex max-w-[58rem] flex-col items-center justify-center gap-4 text-center">
           <h2 className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
-            We Open Source most of our stack for the benefit of the ecosystem.
+            We Open Source most of our technical stack for the benefit of the ecosystem.
           </h2>
           <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
             Our code is available on{" "}
