@@ -1,4 +1,5 @@
 import * as React from "react"
+import Link from "next/link"
 
 import { siteConfig } from "@/config/site"
 import { cn } from "@/lib/utils"
@@ -54,8 +55,23 @@ export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
               GitHub
             </a>
             . */}
-            Copyright © 2023 All rights reserved by {'</>'} Artisan
+            Copyright © 2023 All rights reserved by {'</>'} Artisan |
           </p>
+          <Link className="justify-center text-center text-sm leading-loose md:text-left"
+          href='/privacy'
+          >
+          Privacy Policy |
+          </Link>
+          <Link className="justify-center text-center text-sm leading-loose md:text-left"
+          href='/terms'
+          >
+          Terms and Conditions |
+          </Link>
+          <Link className="justify-center text-center text-sm leading-loose md:text-left"
+          href=''
+          >
+          Linkedin
+          </Link>
         </div>
         <ModeToggle />
       </div>

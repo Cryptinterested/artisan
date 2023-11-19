@@ -156,6 +156,7 @@ export const docsConfig: DocsConfig = {
         },
       ],
     },
+    /**
     {
       title: "Blog",
       items: [
@@ -211,5 +212,6 @@ export const docsConfig: DocsConfig = {
         },
       ],
     },
+    */
   ],
 }
