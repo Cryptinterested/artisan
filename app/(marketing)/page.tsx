@@ -51,13 +51,13 @@ export default async function IndexPage() {
             The MEV Supply chain at your benefit
           </h1>
           <p className="max-w-[42rem] leading-normal text-muted-foreground sm:text-xl sm:leading-8">
-            As a <b>User</b>, submit your operations and benefit from MEV refunds.
+            As a <b>User</b>, submit your operations to our MEV-protected private memepool and benefit from MEV refunds.
           </p>
           <p className="max-w-[42rem] leading-normal text-muted-foreground sm:text-xl sm:leading-8">
-            As a <b>Searcher</b>, enter the most efficient private network.
+            As a <b>Searcher</b>, enter the most efficient P2P private network.
           </p>
           <p className="max-w-[42rem] leading-normal text-muted-foreground sm:text-xl sm:leading-8">
-            As a <b>Block Builder</b>, receive the best bundles at the speed of light.
+            As a <b>Block Builder</b>, receive the best operations bundles at the speed of light.
           </p>
           <div className="space-x-4">
             <Link href="/docs" className={cn(buttonVariants({ size: "lg" }))}>
