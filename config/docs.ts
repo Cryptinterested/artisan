@@ -21,39 +21,6 @@ export const docsConfig: DocsConfig = {
         },
       ],
     },
-    /**
-    {
-      title: "Documentation",
-      items: [
-        {
-          title: "Introduction",
-          href: "/docs/documentation",
-        },
-        {
-          title: "Contentlayer",
-          href: "/docs/in-progress",
-          disabled: true,
-        },
-        {
-          title: "Components",
-          href: "/docs/documentation/components",
-        },
-        {
-          title: "Code Blocks",
-          href: "/docs/documentation/code-blocks",
-        },
-        {
-          title: "Style Guide",
-          href: "/docs/documentation/style-guide",
-        },
-        {
-          title: "Search",
-          href: "/docs/in-progress",
-          disabled: true,
-        },
-      ],
-    },
-    */
     {
       title: "Private mempool",
       items: [
@@ -62,13 +29,13 @@ export const docsConfig: DocsConfig = {
           href: "/docs/privatemempool",
         },
         {
+          title: "How to submit on-chain operations and being rewarded?",
+          href: "/docs/privatemempool/how-to",
+        },
+        {
           title: "API",
           href: "/docs/privatemempool/api",
         },
-        {
-          title: "How to submit on-chain operations and being rewarded?",
-          href: "/docs/privatemempool/how-to",
-        }
       ],
     },
     {
@@ -79,12 +46,12 @@ export const docsConfig: DocsConfig = {
           href: "/docs/bidsystem",
         },
         {
-          title: "Motivations",
-          href: "/docs/bidsystem/motivations",
-        },
-        {
           title: "Technical Specifications",
           href: "/docs/bidsystem/technical-specifications",
+        },
+        {
+          title: "Bid System API",
+          href: "/docs/bidsystem/api",
         },
       ],
     },
@@ -96,12 +63,12 @@ export const docsConfig: DocsConfig = {
           href: "/docs/bundlesender",
         },
         {
-          title: "Motivations",
-          href: "/docs/bundlesender/motivations",
-        },
-        {
           title: "Technical Specifications",
           href: "/docs/bundlesender/technical-specifications",
+        },
+        {
+          title: "Bundle sender API",
+          href: "/docs/bundlesender/api",
         },
       ],
     },
@@ -113,12 +80,8 @@ export const docsConfig: DocsConfig = {
           href: "/docs/artisanbuilder",
         },
         {
-          title: "Motivations",
-          href: "/docs/artisanbuilder/motivations",
-        },
-        {
-          title: "Technical Specifications",
-          href: "/docs/artisanbuilder/technical-specifications",
+          title: "Builder API",
+          href: "/docs/artisanbuilder/builderapi",
         },
       ],
     },
