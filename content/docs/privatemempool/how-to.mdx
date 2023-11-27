@@ -1,4 +1,32 @@
 ---
-title: How to submit on-chain operations and being rewarded?
-description: ...
+title: How to submit on-chain operations and be rewarded?
+description:
 ---
+
+To utilize Artisan Private Pool, it's essential to integrate the Artisan RPC endpoint into your wallet. 
+This can be done effortlessly by following the provided instructions below. Please note that once Artisan RPC 
+is successfully added to your wallet, it's advisable to periodically confirm that it remains selected as your chosen network.
+
+In the event that your wallet lacks the capability to incorporate custom RPC endpoints, reaching out to your wallet developer 
+becomes necessary to facilitate the inclusion of Artisan as a supported RPC.
+
+## Manually add our RPC
+
+<Callout>
+
+**Network Name**: Artisan RPC (Ethereum Mainnet) <br />
+**New RPC URL**: https://rpc.artisanbuilder.xyz <br />
+**Chain ID**: 1 <br />
+**Currency Symbol**: ETH <br />
+**Block Explorer URL**: https://etherscan.io
+
+</Callout>
+
+Artisan RPC orchestrates an auction involving a network of "searchers" who are afforded the opportunity to backrun your transactions. 
+In return, these searchers provide protection against frontrunning and sandwich attacks—two forms of MEV that pose a constant threat to Ethereum users.
+Upon the successful submission of winning bids through the orderflow auction, Artisan RPC directs the entire bid amount, distributing it at a split of 
+x/y between users and validators. Validators retain y% as a reward, while users receive the remaining x% as profit—an earnings boost they would have 
+missed out on without the safeguard offered by Artisan RPC.
+By configuring Artisan RPC as the designated RPC in your wallet, treating it as if it were an additional network, you gain immunity from frontrunning and 
+sandwiching when interacting with any Ethereum dApp. Additionally, the profits resulting from backrunning are automatically deposited into your wallet, 
+bolstering both the security and financial advantages for users.

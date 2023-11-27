@@ -62,13 +62,8 @@ export const docsConfig: DocsConfig = {
           href: "/docs/privatemempool",
         },
         {
-          title: "Motivations",
-          href: "/docs/privatemempool/motivations",
-        },
-        {
-          title: "Technical Specifications",
-          href: "/docs/privatemempool/technical-specifications",
-          disabled: true,
+          title: "API",
+          href: "/docs/privatemempool/api",
         },
         {
           title: "How to submit on-chain operations and being rewarded?",
@@ -133,10 +128,6 @@ export const docsConfig: DocsConfig = {
         {
           title: "Introduction",
           href: "/docs/artisandao",
-        },
-        {
-          title: "Motivations",
-          href: "/docs/artisandao/motivations",
         },
         {
           title: "Artisan DAO architecture & contracts",
