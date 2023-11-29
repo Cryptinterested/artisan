@@ -51,13 +51,10 @@ export default async function IndexPage() {
             The MEV Supply chain at your benefit
           </h1>
           <p className="max-w-[42rem] leading-normal text-muted-foreground sm:text-xl sm:leading-8">
-            As a <b>User</b>, submit your operations to our MEV-protected private memepool and benefit from MEV refunds.
+            As a <b>User</b>, submit your operations to our MEV-protected private mempool and benefit from MEV refunds.
           </p>
           <p className="max-w-[42rem] leading-normal text-muted-foreground sm:text-xl sm:leading-8">
             As a <b>Searcher</b>, enter the most efficient P2P private network.
-          </p>
-          <p className="max-w-[42rem] leading-normal text-muted-foreground sm:text-xl sm:leading-8">
-            As a <b>Block Builder</b>, receive the best operations bundles at the speed of light.
           </p>
           <div className="space-x-4">
             <Link href="/docs" className={cn(buttonVariants({ size: "lg" }))}>
@@ -84,7 +81,7 @@ export default async function IndexPage() {
           </h2>
           <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
             Our research and development company, managed by Artisan DAO creates a suite products
-            and tools to participate in the thriving the MEV supply chain.
+            and tools to participate in the thriving MEV supply chain.
           </p>
         </div>
         <div className="mx-auto grid justify-center gap-4 sm:grid-cols-2 md:max-w-[64rem] md:grid-cols-3">
@@ -186,7 +183,7 @@ export default async function IndexPage() {
         </div> 
         <div className="mx-auto text-center md:max-w-[58rem]">
           <p className="leading-normal text-muted-foreground sm:text-lg sm:leading-7">
-            Artisan also includes a blog and a detailed documentation to easily benefit from on-chain activity.
+            Artisan also includes a blog and a detailed documentation to easily use our tools.
           </p>
         </div>
       </section>
