@@ -7,7 +7,7 @@ export const siteConfig: SiteConfig = {
   url: "https://artisanbuilder.xyz",
   ogImage: "https://tx.shadcn.com/og.jpg",
   links: {
-    twitter: "https://twitter.com/shadcn",
+    twitter: "https://twitter.com/artisan_builder",
     github: "https://github.com/artisan-blockchain",
   },
 }

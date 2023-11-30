@@ -124,7 +124,7 @@ export default async function PostPage({ params }: PostPageProps) {
               author ? (
                 <Link
                   key={author._id}
-                  href={`https://twitter.com/${author.twitter}`}
+                  href={`https://twitter.com/artisan_builder`}
                   className="flex items-center space-x-2 text-sm"
                 >
                   <Image

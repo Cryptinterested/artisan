@@ -32,7 +32,7 @@ export default async function MarketingLayout({
             </Link>
               */}
             <Link
-              href="_blank"
+              href="https://discord.gg/9UMzDkXEKJ"
               className={cn(
               buttonVariants({ variant: "secondary", size: "sm" }),
               "px-4", "mr-2"
@@ -41,7 +41,7 @@ export default async function MarketingLayout({
               Discord
             </Link>
             <Link
-              href="_blank"
+              href="https://t.me/artisanbuilder"
               className={cn(
                 buttonVariants({ variant: "secondary", size: "sm" }),
                 "px-4", "mr-2"
