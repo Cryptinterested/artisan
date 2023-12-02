@@ -4,7 +4,7 @@ export const siteConfig: SiteConfig = {
   name: "</> Artisan",
   description:
     "The MEV Supply chain at your benefit",
-  url: "https://artisanbuilder.xyz",
+  url: "https://www.artisanbuilder.xyz",
   ogImage: "https://tx.shadcn.com/og.jpg",
   links: {
     twitter: "https://twitter.com/artisan_builder",

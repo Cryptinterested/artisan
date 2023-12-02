@@ -29,9 +29,14 @@ export default async function BlogPage() {
         </div>
       </div>
       <hr className="my-8" />
+
       {posts?.length ? (
         <div className="grid gap-10 sm:grid-cols-2">
+
+        {/*
+
           {posts.map((post, index) => (
+
             <article
               key={post._id}
               className="group relative flex flex-col space-y-2"
@@ -59,8 +64,14 @@ export default async function BlogPage() {
                 <span className="sr-only">View Article</span>
               </Link>
             </article>
+
           ))}
+
+        */}
+        No post published yet.
         </div>
+
+        
       ) : (
         <p>No posts published.</p>
       )}

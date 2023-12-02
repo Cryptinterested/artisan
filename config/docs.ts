@@ -22,6 +22,15 @@ export const docsConfig: DocsConfig = {
       ],
     },
     {
+      title: "Artisan RPC Node",
+      items: [
+        {
+          title: "Introduction",
+          href: "/docs/rpcnode",
+        },
+      ],
+    },
+    {
       title: "Private mempool",
       items: [
         {

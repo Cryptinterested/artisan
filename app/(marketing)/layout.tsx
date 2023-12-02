@@ -20,18 +20,9 @@ export default async function MarketingLayout({
         <div className="flex h-20 items-center justify-between py-6">
           <MainNav items={marketingConfig.mainNav} />
           <nav>
-            {/*
+
             <Link
-              href="/login"
-              className={cn(
-                buttonVariants({ variant: "secondary", size: "sm" }),
-                "px-4"
-              )}
-            >
-              Login
-            </Link>
-              */}
-            <Link
+              target="_blank"
               href="https://discord.gg/9UMzDkXEKJ"
               className={cn(
               buttonVariants({ variant: "secondary", size: "sm" }),
@@ -41,13 +32,23 @@ export default async function MarketingLayout({
               Discord
             </Link>
             <Link
-              href="https://t.me/artisanbuilder"
+              target="_blank"
+              href="https://t.me/artisan_builder"
               className={cn(
                 buttonVariants({ variant: "secondary", size: "sm" }),
                 "px-4", "mr-2"
               )}
             >
               Telegram
+            </Link>
+            <Link
+              href="/login"
+              className={cn(
+                buttonVariants({ variant: "secondary", size: "sm" }),
+                "px-4", "mr-2"
+              )}
+            >
+              Login
             </Link>
           </nav>
         </div>

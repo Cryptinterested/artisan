@@ -65,13 +65,15 @@ export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
           <Link className="justify-center text-center text-sm leading-loose md:text-left"
           href='/terms'
           >
-          Terms and Conditions |
+          Terms and Conditions
           </Link>
+          {/*
           <Link className="justify-center text-center text-sm leading-loose md:text-left"
           href=''
           >
           Linkedin
           </Link>
+          */}
         </div>
         <ModeToggle />
       </div>
