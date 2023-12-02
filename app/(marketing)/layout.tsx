@@ -25,7 +25,7 @@ export default async function MarketingLayout({
               target="_blank"
               href="https://discord.gg/9UMzDkXEKJ"
               className={cn(
-              buttonVariants({ variant: "secondary", size: "sm" }),
+              buttonVariants({ variant: "link", size: "sm" }),
               "px-4", "mr-2"
               )}
             >
@@ -35,11 +35,21 @@ export default async function MarketingLayout({
               target="_blank"
               href="https://t.me/artisan_builder"
               className={cn(
-                buttonVariants({ variant: "secondary", size: "sm" }),
+                buttonVariants({ variant: "link", size: "sm" }),
                 "px-4", "mr-2"
               )}
             >
               Telegram
+            </Link>
+            <Link
+              target="_blank"
+              href="https://twitter.com/artisan_builder"
+              className={cn(
+              buttonVariants({ variant: "link", size: "sm" }),
+              "px-4", "mr-2"
+              )}
+            >
+              Twitter
             </Link>
             <Link
               href="/login"

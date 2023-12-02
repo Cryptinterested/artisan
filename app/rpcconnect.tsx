@@ -53,7 +53,7 @@ const ConnectRPC: NextPage = () => {
     <section className="space-y-6 pb-8 pt-6">
   <div className="container flex max-w-[64rem] flex-col items-center gap-4 text-center">
     <button className="rounded-2xl bg-green-500 px-4 py-2 font-medium text-white" type="button" onClick={addCustomNetwork}>
-      Add Artisan RPC refund!
+      Add Artisan refund RPC
     </button>
   </div>
 </section>
