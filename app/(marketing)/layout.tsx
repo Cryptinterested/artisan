@@ -58,7 +58,7 @@ export default async function MarketingLayout({
                 "px-4", "mr-2"
               )}
             >
-              Login
+              Access token
             </Link>
           </nav>
         </div>

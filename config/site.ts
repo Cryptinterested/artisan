@@ -5,7 +5,7 @@ export const siteConfig: SiteConfig = {
   description:
     "The MEV Supply chain at your benefit",
   url: "https://www.artisanbuilder.xyz",
-  ogImage: "https://tx.shadcn.com/og.jpg",
+  ogImage: "",
   links: {
     twitter: "https://twitter.com/artisan_builder",
     github: "https://github.com/artisan-blockchain",

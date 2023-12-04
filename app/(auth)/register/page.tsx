@@ -21,7 +21,7 @@ export default function RegisterPage() {
           "absolute right-4 top-4 md:right-8 md:top-8"
         )}
       >
-        Login
+        Access token
       </Link>
       <div className="hidden h-full bg-muted lg:block" />
       <div className="lg:p-8">

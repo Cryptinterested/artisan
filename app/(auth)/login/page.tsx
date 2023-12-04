@@ -29,13 +29,14 @@ export default function LoginPage() {
       <div className="mx-auto flex w-full flex-col justify-center space-y-6 sm:w-[350px]">
         <div className="flex flex-col space-y-2 text-center">
           <h1 className="text-2xl font-semibold tracking-tight">
-            Welcome back
+            Welcome Searcher!
           </h1>
           <p className="text-sm text-muted-foreground">
-            Enter your email to sign in to your account
+            Enter your email address to receive a token access
           </p>
         </div>
         <UserAuthForm />
+        {/*
         <p className="px-8 text-center text-sm text-muted-foreground">
           <Link
             href="/register"
@@ -43,6 +44,10 @@ export default function LoginPage() {
           >
             Don&apos;t have an account? Sign Up
           </Link>
+        </p>
+        */}
+        <p className="space-y-6 text-sm text-muted-foreground">
+        Please feel free to contact us, if there is any issue: <a href="mailto:contact@artisanbuilder.xyz" className="underline">contact@artisanbuilder.xyz</a>
         </p>
       </div>
     </div>

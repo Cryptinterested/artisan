@@ -42,17 +42,17 @@ export function UserAuthForm({ className, ...props }: UserAuthFormProps) {
 
     setIsLoading(false)
 
-    if (!signInResult?.ok) {
+    if (signInResult?.error) {
       return toast({
-        title: "Something went wrong.",
-        description: "Your sign in request failed. Please try again.",
+        title: "You are already registered in our database",
+        description: "Please verify and check your spam too.",
         variant: "destructive",
       })
     }
 
     return toast({
-      title: "Check your email",
-      description: "We sent you a login link. Be sure to check your spam too.",
+      title: "Congratulations! Check your email to start using our API",
+      description: "Be sure to check your spam too.",
     })
   }
 
@@ -84,7 +84,7 @@ export function UserAuthForm({ className, ...props }: UserAuthFormProps) {
             {isLoading && (
               <Icons.spinner className="mr-2 h-4 w-4 animate-spin" />
             )}
-            Sign In with Email
+            Receive my token access
           </button>
         </div>
       </form>
