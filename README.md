@@ -21,6 +21,12 @@ pnpm install
 cp .env.example .env.local
 ```
 
+3. Create the ```/prisma/.env``` containing your PlanetScale DATABASE_URL endpoint.
+Then push the DB schema into your PlanetScale database:
+```sh
+npx prisma db push
+``` 
+
 3. Start the development server:
 
 ```sh

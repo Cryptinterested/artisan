@@ -114,7 +114,7 @@ import { Client } from "postmark"
 import { env } from "@/env.mjs"
 import { siteConfig } from "@/config/site"
 import { db } from "@/lib/db"
-import { toast } from "@/components/ui/use-toast"
+import generateAccessToken from "./tokenAccessGenerator"
 
 
 const postmarkClient = new Client(env.POSTMARK_API_TOKEN)
@@ -149,10 +149,16 @@ export const authOptions: NextAuthOptions = {
           throw new Error("Email address is already in use");
         }
 
+        //AccessToken Creation
+        const accessToken = generateAccessToken(identifier);
+
+        // console.log('Generated Access Token:', accessToken);
+
         // If the email doesn't exist, add it to the database
         await db.user.create({
         data: {
           email: identifier,
+          tokenAccess: accessToken,
           // ... other user data ...
           },
         });
@@ -170,8 +176,10 @@ export const authOptions: NextAuthOptions = {
         To: identifier,
         From: provider.from as string,
         TemplateModel: {
+          sender: 'contact@artisanbuilder.xyz',
           action_url: url,
-          product_name: siteConfig.name,
+          product_name: '</> Artisan',
+          token_access: accessToken,
         },
         Headers: [
           {
