@@ -18,7 +18,6 @@ const nextConfig = {
     serverComponentsExternalPackages: ["@prisma/client"],
   },
 }
-
 export default withContentlayer(nextConfig)
 
 */}
@@ -41,7 +40,6 @@ const nextConfig = {
     serverComponentsExternalPackages: ["@prisma/client"],
   },
 }
-
 const withContentlayer = createContentlayerPlugin({
   // Additional Contentlayer config options
 });
