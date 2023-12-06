@@ -24,6 +24,7 @@ interface RootLayoutProps {
   children: React.ReactNode
 }
 
+
 export const metadata = {
   title: {
     default: siteConfig.name,
@@ -60,7 +61,6 @@ export const metadata = {
     card: "summary_large_image",
     title: siteConfig.name,
     description: siteConfig.description,
-    images: [`${siteConfig.url}/og.jpg`],
     creator: "@shadcn",
   },
   icons: {
