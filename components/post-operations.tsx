@@ -3,7 +3,7 @@
 import * as React from "react"
 import Link from "next/link"
 import { useRouter } from "next/navigation"
-import { Post } from "@prisma/client"
+// import { Post } from "@prisma/client"
 
 import {
   AlertDialog,
@@ -41,10 +41,16 @@ async function deletePost(postId: string) {
   return true
 }
 
+{/*
 interface PostOperationsProps {
   post: Pick<Post, "id" | "title">
 }
+*/}
 
+export function PostOperations({ post }) {
+}
+
+{/*
 export function PostOperations({ post }: PostOperationsProps) {
   const router = useRouter()
   const [showDeleteAlert, setShowDeleteAlert] = React.useState<boolean>(false)
@@ -112,3 +118,5 @@ export function PostOperations({ post }: PostOperationsProps) {
     </>
   )
 }
+
+*/}
