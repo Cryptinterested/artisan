@@ -20,6 +20,7 @@ export default async function DashboardPage() {
     redirect(authOptions?.pages?.signIn || "/login")
   }
 
+  {/*
   const posts = await db.post.findMany({
     where: {
       authorId: user.id,
@@ -35,12 +36,17 @@ export default async function DashboardPage() {
     },
   })
 
+  */}
+
   return (
     <DashboardShell>
       <DashboardHeader heading="Posts" text="Create and manage posts.">
         <PostCreateButton />
       </DashboardHeader>
       <div>
+
+        {/*
+        
         {posts?.length ? (
           <div className="divide-y divide-border rounded-md border">
             {posts.map((post) => (
@@ -57,6 +63,9 @@ export default async function DashboardPage() {
             <PostCreateButton variant="outline" />
           </EmptyPlaceholder>
         )}
+
+        */}
+        
       </div>
     </DashboardShell>
   )
