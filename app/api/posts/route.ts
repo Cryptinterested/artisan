@@ -11,6 +11,7 @@ const postCreateSchema = z.object({
   content: z.string().optional(),
 })
 
+{/*
 export async function GET() {
   try {
     const session = await getServerSession(authOptions)
@@ -90,3 +91,5 @@ export async function POST(req: Request) {
     return new Response(null, { status: 500 })
   }
 }
+
+*/}
