@@ -11,6 +11,7 @@ const routeContextSchema = z.object({
   }),
 })
 
+{/*
 export async function DELETE(
   req: Request,
   context: z.infer<typeof routeContextSchema>
@@ -91,3 +92,5 @@ async function verifyCurrentUserHasAccessToPost(postId: string) {
 
   return count > 0
 }
+
+*/}
