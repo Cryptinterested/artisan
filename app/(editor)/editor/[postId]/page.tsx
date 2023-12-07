@@ -1,11 +1,12 @@
 import { notFound, redirect } from "next/navigation"
-import { Post, User } from "@prisma/client"
+import { User } from "@prisma/client"
 
 import { authOptions } from "@/lib/auth"
 import { db } from "@/lib/db"
 import { getCurrentUser } from "@/lib/session"
 import { Editor } from "@/components/editor"
 
+{/*
 async function getPostForUser(postId: Post["id"], userId: User["id"]) {
   return await db.post.findFirst({
     where: {
@@ -18,8 +19,11 @@ async function getPostForUser(postId: Post["id"], userId: User["id"]) {
 interface EditorPageProps {
   params: { postId: string }
 }
+*/}
 
 export default async function EditorPage({ params }: EditorPageProps) {
+
+  {/*
   const user = await getCurrentUser()
 
   if (!user) {
@@ -42,4 +46,6 @@ export default async function EditorPage({ params }: EditorPageProps) {
       }}
     />
   )
+
+  */}
 }
