@@ -57,9 +57,9 @@ export async function GET(req: Request) {
     if (error instanceof z.ZodError) {
       return new Response(JSON.stringify(error.issues), { status: 422 })
     }
+  
+  */}
 
     return new Response(null, { status: 500 })
-  }
 
-  */}
 }
