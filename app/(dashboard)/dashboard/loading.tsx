@@ -10,11 +10,13 @@ export default function DashboardLoading() {
         <PostCreateButton />
       </DashboardHeader>
       <div className="divide-border-200 divide-y rounded-md border">
+        {/*
         <PostItem.Skeleton />
         <PostItem.Skeleton />
         <PostItem.Skeleton />
         <PostItem.Skeleton />
         <PostItem.Skeleton />
+        */}
       </div>
     </DashboardShell>
   )
