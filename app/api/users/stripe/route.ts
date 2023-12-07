@@ -10,6 +10,8 @@ import { absoluteUrl } from "@/lib/utils"
 const billingUrl = absoluteUrl("/dashboard/billing")
 
 export async function GET(req: Request) {
+
+  {/*
   try {
     const session = await getServerSession(authOptions)
 
@@ -58,4 +60,6 @@ export async function GET(req: Request) {
 
     return new Response(null, { status: 500 })
   }
+
+  */}
 }
