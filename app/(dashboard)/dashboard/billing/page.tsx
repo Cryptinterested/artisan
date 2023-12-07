@@ -28,7 +28,7 @@ export default async function BillingPage() {
   if (!user) {
     redirect(authOptions?.pages?.signIn || "/login")
   }
-
+  {/*
   const subscriptionPlan = await getUserSubscriptionPlan(user.id)
 
   // If user has a pro plan, check cancel status on Stripe.
@@ -39,6 +39,8 @@ export default async function BillingPage() {
     )
     isCanceled = stripePlan.cancel_at_period_end
   }
+
+  */}
 
   return (
     <DashboardShell>
@@ -64,12 +66,15 @@ export default async function BillingPage() {
             .
           </AlertDescription>
         </Alert>
+
+        {/*
         <BillingForm
           subscriptionPlan={{
             ...subscriptionPlan,
             isCanceled,
           }}
         />
+        */}
       </div>
     </DashboardShell>
   )
