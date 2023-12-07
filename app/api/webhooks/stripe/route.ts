@@ -6,6 +6,9 @@ import { db } from "@/lib/db"
 import { stripe } from "@/lib/stripe"
 
 export async function POST(req: Request) {
+
+  {/*
+  
   const body = await req.text()
   const signature = headers().get("Stripe-Signature") as string
 
@@ -64,8 +67,11 @@ export async function POST(req: Request) {
           subscription.current_period_end * 1000
         ),
       },
-    })
+    })  
   }
 
   return new Response(null, { status: 200 })
+
+      */}
+
 }
