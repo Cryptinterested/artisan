@@ -36,3 +36,5 @@ pnpm dev
 ## License
 
 Licensed under the [AGPL-3.0](https://github.com/artisan-blockchain/artisan-website/LICENSE.md).
+
+Feel free to reach out at [contact@artisanbuilder.xyz](contact@artisanbuilder.xyz)
