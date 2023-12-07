@@ -16,15 +16,17 @@ async function getPostForUser(postId: Post["id"], userId: User["id"]) {
   })
 }
 
+*/}
+
+
 interface EditorPageProps {
   params: { postId: string }
 }
-*/}
 
-{/*
 
 
 export default async function EditorPage({ params }: EditorPageProps) {
+  {/*
 
   const user = await getCurrentUser()
 
@@ -48,8 +50,8 @@ export default async function EditorPage({ params }: EditorPageProps) {
       }}
     />
   )
+  */}
 
 }
 
-  */}
 
