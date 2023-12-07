@@ -1,14 +1,20 @@
 import Link from "next/link"
-import { Post } from "@prisma/client"
+// import { Post } from "@prisma/client"
 
 import { formatDate } from "@/lib/utils"
 import { Skeleton } from "@/components/ui/skeleton"
 import { PostOperations } from "@/components/post-operations"
 
+{/*
 interface PostItemProps {
   post: Pick<Post, "id" | "title" | "published" | "createdAt">
 }
+*/}
 
+export function PostItem({ post }) {
+}
+
+{/*
 export function PostItem({ post }: PostItemProps) {
   return (
     <div className="flex items-center justify-between p-4">
@@ -40,3 +46,5 @@ PostItem.Skeleton = function PostItemSkeleton() {
     </div>
   )
 }
+
+*/}
