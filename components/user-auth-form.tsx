@@ -213,7 +213,8 @@ export function UserAuthForm({ className, ...props }: UserAuthFormProps) {
 
           {/* reCAPTCHA component */}
           <ReCAPTCHA
-            sitekey={NEXT_PUBLIC_RECAPTCHA_SECRET_KEY}
+            class="g-recaptcha"
+            sitekey={NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
             onChange={(value) => setRecaptchaValue(value)}
           />
 
