@@ -19,7 +19,7 @@ export const env = createEnv({
     STRIPE_WEBHOOK_SECRET: z.string().min(1),
     STRIPE_PRO_MONTHLY_PLAN_ID: z.string().min(1),
     SECRET_KEY_TOKEN_GENERATOR: z.string().min(1),
-    NEXT_PUBLIC_RECAPTCHA_SECRET_KEY: z.string().min(1),
+    NEXT_PUBLIC_RECAPTCHA_SITE_KEY: z.string().min(1),
   },
   client: {
     NEXT_PUBLIC_APP_URL: z.string().min(1),
@@ -40,6 +40,6 @@ export const env = createEnv({
     STRIPE_PRO_MONTHLY_PLAN_ID: process.env.STRIPE_PRO_MONTHLY_PLAN_ID,
     NEXT_PUBLIC_APP_URL: process.env.NEXT_PUBLIC_APP_URL,
     SECRET_KEY_TOKEN_GENERATOR: process.env.SECRET_KEY_TOKEN_GENERATOR,
-    NEXT_PUBLIC_RECAPTCHA_SECRET_KEY: process.env.NEXT_PUBLIC_RECAPTCHA_SECRET_KEY,
+    NEXT_PUBLIC_RECAPTCHA_SITE_KEY: process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY,
   },
 })
