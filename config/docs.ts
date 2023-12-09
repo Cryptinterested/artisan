@@ -37,6 +37,7 @@ export const docsConfig: DocsConfig = {
     {
       title: "Private mempool",
       items: [
+        /*
         {
           title: "Introduction",
           href: "/docs/privatemempool",
@@ -47,11 +48,13 @@ export const docsConfig: DocsConfig = {
           href: "/docs/privatemempool/api",
           disabled: true,
         },
+        */
       ],
     },
     {
       title: "Bid system",
       items: [
+        /*
         {
           title: "Introduction",
           href: "/docs/bidsystem",
@@ -67,11 +70,13 @@ export const docsConfig: DocsConfig = {
           href: "/docs/bidsystem/api",
           disabled: true,
         },
+        */
       ],
     },
     {
       title: "Bundle Sender",
       items: [
+        /*
         {
           title: "Introduction",
           href: "/docs/bundlesender",
@@ -87,11 +92,13 @@ export const docsConfig: DocsConfig = {
           href: "/docs/bundlesender/api",
           disabled: true,
         },
+        */
       ],
     },
     {
       title: "Artisan Builder",
       items: [
+        /*
         {
           title: "Introduction",
           href: "/docs/artisanbuilder",
@@ -102,11 +109,13 @@ export const docsConfig: DocsConfig = {
           href: "/docs/artisanbuilder/builderapi",
           disabled: true,
         },
+        */
       ],
     },
     {
       title: "Artisan DAO",
       items: [
+        /*
         {
           title: "Introduction",
           href: "/docs/artisandao",
@@ -132,6 +141,7 @@ export const docsConfig: DocsConfig = {
           href: "/docs/artisandao/voting-process",
           disabled: true,
         },
+        */
       ],
     },
     /**
