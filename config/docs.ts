@@ -24,9 +24,13 @@ export const docsConfig: DocsConfig = {
     {
       title: "Artisan RPC Node",
       items: [
+        // {
+        //   title: "Introduction",
+        //   href: "/docs/rpcnode",
+        // },
         {
-          title: "Introduction",
-          href: "/docs/rpcnode",
+          title: "How to submit on-chain operations and being rewarded?",
+          href: "/docs/rpcnode/how-to",
         },
       ],
     },
@@ -36,14 +40,12 @@ export const docsConfig: DocsConfig = {
         {
           title: "Introduction",
           href: "/docs/privatemempool",
-        },
-        {
-          title: "How to submit on-chain operations and being rewarded?",
-          href: "/docs/privatemempool/how-to",
+          disabled: true,
         },
         {
           title: "API",
           href: "/docs/privatemempool/api",
+          disabled: true,
         },
       ],
     },
@@ -53,14 +55,17 @@ export const docsConfig: DocsConfig = {
         {
           title: "Introduction",
           href: "/docs/bidsystem",
+          disabled: true,
         },
         {
           title: "Technical Specifications",
           href: "/docs/bidsystem/technical-specifications",
+          disabled: true,
         },
         {
           title: "Bid System API",
           href: "/docs/bidsystem/api",
+          disabled: true,
         },
       ],
     },
@@ -70,14 +75,17 @@ export const docsConfig: DocsConfig = {
         {
           title: "Introduction",
           href: "/docs/bundlesender",
+          disabled: true,
         },
         {
           title: "Technical Specifications",
           href: "/docs/bundlesender/technical-specifications",
+          disabled: true,
         },
         {
           title: "Bundle sender API",
           href: "/docs/bundlesender/api",
+          disabled: true,
         },
       ],
     },
@@ -87,10 +95,12 @@ export const docsConfig: DocsConfig = {
         {
           title: "Introduction",
           href: "/docs/artisanbuilder",
+          disabled: true,
         },
         {
           title: "Builder API",
           href: "/docs/artisanbuilder/builderapi",
+          disabled: true,
         },
       ],
     },
@@ -100,22 +110,27 @@ export const docsConfig: DocsConfig = {
         {
           title: "Introduction",
           href: "/docs/artisandao",
+          disabled: true,
         },
         {
           title: "Artisan DAO architecture & contracts",
           href: "/docs/artisandao/architecture-contracts",
+          disabled: true,
         },
         {
           title: "Initial distribution",
           href: "/docs/artisandao/initial-distribution",
+          disabled: true,
         },
         {
           title: "Multisig contracts & adresses",
           href: "/docs/artisandao/msig-addresses",
+          disabled: true,
         },
         {
           title: "Voting process",
           href: "/docs/artisandao/voting-process",
+          disabled: true,
         },
       ],
     },

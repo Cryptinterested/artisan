@@ -35,6 +35,91 @@ async function getGitHubStars(): Promise<string | null> {
   }
 }
 
+import React, { useState } from 'react';
+
+const FAQSection = () => {
+  const faqData = [
+    {
+      question: 'What is MEV?',
+      answer:
+        'Maximal Extractable Value (MEV) is a technique employed by knowledgeable individuals called "searchers" to take advantage of your transactions, \
+       ultimately costing you money. Whenever you conduct a transaction with value, searchers can "frontrun" it by executing the same transaction just before \
+       you do, pocketing the profits. If you experience frontrunning, you may also encounter "backrunning," where the searcher mitigates any price changes caused \
+       by your trade, once again keeping the profits. The combination of frontrun and backrun is referred to as a "sandwich attack," which is considered the most \
+       detrimental form of MEV. MEV results in less favorable prices for your transactions and can lead to losses ranging from hundreds to thousands of dollars. \
+       MEV Blocker serves as a straightforward solution—an RPC endpoint that shields all transaction types from MEV.',
+    },
+    {
+      question: 'What is Artisan refund RPC?',
+      answer: '',
+    },
+    {
+      question: 'How does Artisan RPC refund work?',
+      answer: '',
+    },
+    {
+      question: 'How much could I expect as a user?',
+      answer: '',
+    },
+    {
+      question: 'As a searcher, what are the benefits of using Artisan private pool?',
+      answer: '',
+    },
+    {
+      question: 'What are the key specificities of Artisan private pool?',
+      answer: '',
+    },
+    {
+      question: 'How could I contribute to Artisan suite of tools?',
+      answer: '',
+    },
+    {
+      question: 'Can I invest in the company?',
+      answer: '',
+    },
+    // Add more FAQ items as needed
+  ];
+
+  const [expandedIndex, setExpandedIndex] = useState(null);
+
+  const toggleAnswer = (index) => {
+    setExpandedIndex((prevIndex) => (prevIndex === index ? null : index));
+  };
+
+  return (
+    <section id="faq" className="container py-8 md:py-12 lg:py-24">
+      <div className="mx-auto flex max-w-[58rem] flex-col items-start justify-center gap-4 text-left">
+        <h2 className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
+          Frequently Asked Questions (FAQ)
+        </h2>
+        <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
+          Here are some common questions asked by our community.
+        </p>
+        <div className="mt-6">
+          {faqData.map((item, index) => (
+            <div className="mb-4" key={index}>
+              <div
+                className={`cursor-pointer text-xl font-medium leading-[1.25] ${
+                  expandedIndex === index ? 'pb-2' : 'pb-4'
+                }`}
+                onClick={() => toggleAnswer(index)}
+              >
+                <span>{item.question}</span>{' '}
+                {expandedIndex === index ? '-' : '+'}
+              </div>
+              {expandedIndex === index && (
+                <p className="text-left leading-6 text-muted-foreground">
+                  {item.answer}
+                </p>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
 export default async function IndexPage() {
   const stars = await getGitHubStars()
 
@@ -186,6 +271,9 @@ export default async function IndexPage() {
           </p>
         </div>
       </section>
+
+      < FAQSection />
+
       <section id="open-source" className="container py-8 md:py-12 lg:py-24">
         <div className="mx-auto flex max-w-[58rem] flex-col items-center justify-center gap-4 text-center">
           <h2 className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
