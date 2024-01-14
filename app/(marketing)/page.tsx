@@ -42,40 +42,46 @@ const FAQSection = () => {
     {
       question: 'What is MEV?',
       answer:
-        'Maximal Extractable Value (MEV) is a technique employed by knowledgeable individuals called "searchers" to take advantage of your transactions, \
-       ultimately costing you money. Whenever you conduct a transaction with value, searchers can "frontrun" it by executing the same transaction just before \
-       you do, pocketing the profits. If you experience frontrunning, you may also encounter "backrunning," where the searcher mitigates any price changes caused \
-       by your trade, once again keeping the profits. The combination of frontrun and backrun is referred to as a "sandwich attack," which is considered the most \
+        'Maximal Extractable Value (MEV) is a phenomenon where network participants take advantage of publicly known transactions, \
+       to create their own complex operations, and adjust their transaction fees to perform profitable trades, ultimately costing end users money. \
+       Whenever someone conducts a public transaction with value, arbitrageurs can "frontrun" it by executing the same transaction just before \
+      , pocketing the profits. If you experience frontrunning, you may also encounter "backrunning," where arbitrageurs mitigate any price changes caused \
+       by your trade, once again keeping the profits. The combination of frontrunning and backruning is referred to as a "sandwich attack", which is considered the most \
        detrimental form of MEV. MEV results in less favorable prices for your transactions and can lead to losses ranging from hundreds to thousands of dollars. \
-       MEV Blocker serves as a straightforward solution—an RPC endpoint that shields all transaction types from MEV.',
+       Artisan refund RPC serves as a straightforward solution—an RPC endpoint that protects your transaction from bad MEV.',
     },
     {
       question: 'What is Artisan refund RPC?',
-      answer: '',
+      answer: 'Originally, an RPC (Remote Procedure Call) is used to connect decentralized applications to the blockchain. \
+      Artisan refund RPC helps users to submit trades while being protected against malicious MEV. To achieve so, whenever you submit a transaction to our refund RPC, \
+      it enters a pool where searchers will compete to exploit Good MEV opportunities. You will be protected against frontrunning or sandwich attacks. Additionnally, \
+      you\'ll receive up to 90% the of the profit generated. To use our endpoint, change your selected default RPC by clicking on the Green button `Add Artisan RPC refund` \
+      on top of the home page.',
     },
     {
       question: 'How does Artisan RPC refund work?',
-      answer: '',
+      answer: 'Artisan creates a bidding system where arbitrageurs and searchers compete using an auction mechanism to win the right to perform Good MEV opportunities. When a Good MEV \
+      operation occurs, you will receive up to 90% of the profit made.',
     },
     {
       question: 'How much could I expect as a user?',
-      answer: '',
+      answer: 'The amount refunded is not predictable since it depends on both your transaction size and the winning bid amount.',
     },
     {
       question: 'As a searcher, what are the benefits of using Artisan private pool?',
-      answer: '',
+      answer: 'You benefit from the best MEV opportunities and fine-tuned feedback/logs on your submitted bundles.',
     },
-    {
-      question: 'What are the key specificities of Artisan private pool?',
-      answer: '',
-    },
+    //{
+    //  question: 'What are the key specificities of Artisan private pool?',
+    //  answer: '',
+    //},
     {
       question: 'How could I contribute to Artisan suite of tools?',
-      answer: '',
+      answer: 'Visit our `Careers` page and reach out to us by email or using our social networks!',
     },
     {
       question: 'Can I invest in the company?',
-      answer: '',
+      answer: 'More information very soon...',
     },
     // Add more FAQ items as needed
   ];
