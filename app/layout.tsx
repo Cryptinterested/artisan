@@ -40,11 +40,11 @@ export const metadata = {
   ],
   authors: [
     {
-      name: "shadcn",
-      url: "https://shadcn.com",
+      name: "artisan",
+      url: "https://artisanbuilder.xyz",
     },
   ],
-  creator: "shadcn",
+  creator: "artisan",
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "white" },
     { media: "(prefers-color-scheme: dark)", color: "black" },
@@ -61,7 +61,7 @@ export const metadata = {
     card: "summary_large_image",
     title: siteConfig.name,
     description: siteConfig.description,
-    creator: "@shadcn",
+    creator: "@artisan_builder",
   },
   icons: {
     icon: "/favicon.ico",
