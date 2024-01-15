@@ -55,7 +55,7 @@ export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
               GitHub
             </a>
             . */}
-            Copyright © 2023 All rights reserved by {'</>'} Artisan |
+            Copyright © 2024 All rights reserved by {'</>'} Artisan |
           </p>
           <Link className="justify-center text-center text-sm leading-loose md:text-left"
           href='/privacy'
