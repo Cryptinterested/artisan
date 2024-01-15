@@ -47,7 +47,7 @@ const FAQSection = () => {
        Whenever someone conducts a public transaction with value, arbitrageurs can "frontrun" it by executing the same transaction just before \
       , pocketing the profits. If you experience frontrunning, you may also encounter "backrunning," where arbitrageurs mitigate any price changes caused \
        by your trade, once again keeping the profits. The combination of frontrunning and backruning is referred to as a "sandwich attack", which is considered the most \
-       detrimental form of MEV. MEV results in less favorable prices for your transactions and can lead to losses ranging from hundreds to thousands of dollars. \
+       detrimental form of MEV. Bad MEV results in less favorable prices for your transactions and can lead to losses ranging from hundreds to thousands of dollars. \
        Artisan refund RPC serves as a straightforward solution—an RPC endpoint that protects your transaction from bad MEV.',
     },
     {
@@ -60,7 +60,7 @@ const FAQSection = () => {
     },
     {
       question: 'How does Artisan RPC refund work?',
-      answer: 'Artisan creates a bidding system where arbitrageurs and searchers compete using an auction mechanism to win the right to perform Good MEV opportunities. When a Good MEV \
+      answer: 'Artisan creates an efficient bidding system where arbitrageurs and searchers compete using an auction mechanism to win the right to perform Good MEV opportunities. When a Good MEV \
       operation occurs, you will receive up to 90% of the profit made.',
     },
     {
@@ -177,7 +177,7 @@ export default async function IndexPage() {
           </h2>
           <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
             Our research and development company, managed by Artisan DAO creates a suite products
-            and tools to participate in the thriving MEV supply chain.
+            and tools to participate in the thriving MEV Supply Chain.
           </p>
         </div>
 
@@ -188,7 +188,7 @@ export default async function IndexPage() {
                 <div className="space-y-2">
                   <h3 className="font-bold ">RPC Node</h3>
                   <p className="text-sm text-muted-foreground">
-                    Access our public RPC node, submit your operations and benefit from MEV refunds.
+                    Access our protective RPC endpoint, submit your operations and benefit from MEV refunds.
                   </p>
                 </div>
               </div>
@@ -198,9 +198,9 @@ export default async function IndexPage() {
             <Link href="/docs/privatemempool">
             <div className="flex h-[180px] flex-col justify-between rounded-md p-6">
               <div className="space-y-2">
-                <h3 className="font-bold">Artisan private mempool</h3>
+                <h3 className="font-bold">Artisan Private Pool</h3>
                 <p className="text-sm text-muted-foreground">
-                  A private mempool, rewarding users for submitting operations.
+                  A private mempool, rewarding end-users for submitting operations.
                 </p>
               </div>
             </div>
@@ -210,9 +210,9 @@ export default async function IndexPage() {
             <Link href="/docs/bidsystem">
             <div className="flex h-[180px] flex-col justify-between rounded-md p-6">
               <div className="space-y-2">
-                <h3 className="font-bold">Bid system</h3>
+                <h3 className="font-bold">Bid System</h3>
                 <p className="text-sm">
-                  A bidding system where searchers benefit from the most curated order flow.
+                  An efficient auction mechanism where searchers benefit from the most rich order flow.
                 </p>
               </div>
             </div>
@@ -222,9 +222,9 @@ export default async function IndexPage() {
             <Link href="/docs/bundlesender">
             <div className="flex h-[180px] flex-col justify-between rounded-md p-6">
               <div className="space-y-2">
-                <h3 className="font-bold">Bundle sender</h3>
+                <h3 className="font-bold">Bundle Sender</h3>
                 <p className="text-sm text-muted-foreground">
-                  A dedicated endpoint that carefully distribute bundles to block builders, so that you don&apos;t have to.
+                  A dedicated endpoint that carefully distribute searchers bundles to block builders, so that they don&apos;t have to.
                 </p>
               </div>
             </div>
@@ -234,9 +234,9 @@ export default async function IndexPage() {
             <Link href="/docs/artisanbuilder">
             <div className="flex h-[180px] flex-col justify-between rounded-md p-6">
               <div className="space-y-2">
-                <h3 className="font-bold">Artisan builder</h3>
+                <h3 className="font-bold">Artisan Builder</h3>
                 <p className="text-sm text-muted-foreground">
-                  Our neutral and protective block builder, creating the most lucrative blocks, while allowing redistribution to operations originators.
+                  Our neutral and protective block builder, creating the most lucrative blocks, while preserving redistribution to operations originators.
                 </p>
               </div>
             </div>
@@ -248,7 +248,7 @@ export default async function IndexPage() {
               <div className="space-y-2">
                 <h3 className="font-bold">Artisan DAO</h3>
                 <p className="text-sm text-muted-foreground">
-                  The organization that orchestrate the Artisan Ecosystem.
+                  The organization that powers the Artisan Ecosystem.
                 </p>
               </div>
             </div>
@@ -283,7 +283,7 @@ export default async function IndexPage() {
       <section id="open-source" className="container py-8 md:py-12 lg:py-24">
         <div className="mx-auto flex max-w-[58rem] flex-col items-center justify-center gap-4 text-center">
           <h2 className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
-            We Open Source most of our technical stack for the benefit of the ecosystem.
+            We Open Source most of our technical stack for the benefit of our community.
           </h2>
           <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
             Our code is available on{" "}
