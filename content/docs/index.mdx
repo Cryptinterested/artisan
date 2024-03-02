@@ -18,7 +18,7 @@ at [contact@artisanbuilder.xyz](mailto:contact@artisan.xyz).
 
 **Artisan Labs**: one of the core contributors of Artisan suite of products
 
-**Artisan Suite of products**: Artisan technical stack, made of an efficient RPC endpoint, a private network, a bid system, a operation bundle sender and a blockbuilder. 
+**Artisan Suite of products**: Artisan technical stack, made of an efficient refund RPC, a private network, a builder aggregator and a neutral block builder. 
 
 **Artisan DAO**: the on-chain entity governing Artisan Labs and working together to improve Artisan Suite of products.
 
@@ -45,6 +45,11 @@ at [contact@artisanbuilder.xyz](mailto:contact@artisan.xyz).
 - Approves token exchange allowance between investors and contributors, directly on-chain against tokenized fiat currencies or ETH.
 - Manages contributors and investors annual rewards, based on the Artisan tools' profitability.
 
+## Artisan Technical Architecture
+
+<a href="/images/tech_archi.png">
+  <img src="/images/tech_archi.png"/>
+</a>
 
 ## Services
 
@@ -54,7 +59,7 @@ Select a dedicated section below to learn more about it.
 
 <Card href="/docs/rpcnode">
 
-### Artisan RPC Node
+### Artisan refund RPC
 
 A dedicated enpoint to get MEV refunds. 
 
@@ -62,20 +67,22 @@ A dedicated enpoint to get MEV refunds.
 
 <Card href="/docs/privatemempool" disabled>
 
-### Private mempool
+### Artisan Private Pool
 
-A high frequency Peer-to-peer network that rewards you for submitting on-chain operations. 
+A high frequency Peer-to-peer network for MEV searching. 
 
 </Card>
 
 <Card href="/docs/bidsystem" disabled>
 
-### Bid System
+### Builder Aggregator
 
-A bidding aggregator for MEV searchers.
+An efficient aggregation endpoint that carefully distribute searchers bundles to block builders, so that they don&apos;t have to.
 
 </Card>
 
+
+{/*
 <Card href="/docs/bundlesender" disabled>
 
 ### Bundle Sender
@@ -83,6 +90,7 @@ A bidding aggregator for MEV searchers.
 An effective bundle aggregator that sends searchers' bundles to block builders, so that they don't have to.
 
 </Card>
+*/}
 
 <Card href="/docs/artisanbuilder" disabled>
 

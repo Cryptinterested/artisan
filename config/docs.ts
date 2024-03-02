@@ -22,7 +22,7 @@ export const docsConfig: DocsConfig = {
       ],
     },
     {
-      title: "Artisan RPC Node",
+      title: "Artisan Refund RPC",
       items: [
         // {
         //   title: "Introduction",
@@ -35,7 +35,7 @@ export const docsConfig: DocsConfig = {
       ],
     },
     {
-      title: "Private mempool",
+      title: "Artisan Private Pool",
       items: [
         /*
         {
@@ -52,7 +52,7 @@ export const docsConfig: DocsConfig = {
       ],
     },
     {
-      title: "Bid system",
+      title: "Builder Aggregator",
       items: [
         /*
         {
@@ -73,10 +73,11 @@ export const docsConfig: DocsConfig = {
         */
       ],
     },
+
+    /*
     {
       title: "Bundle Sender",
-      items: [
-        /*
+      items: [  
         {
           title: "Introduction",
           href: "/docs/bundlesender",
@@ -92,9 +93,9 @@ export const docsConfig: DocsConfig = {
           href: "/docs/bundlesender/api",
           disabled: true,
         },
-        */
       ],
     },
+    */
     {
       title: "Artisan Builder",
       items: [

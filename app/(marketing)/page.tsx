@@ -68,8 +68,8 @@ const FAQSection = () => {
       answer: 'The amount refunded is not predictable since it depends on both your transaction size and the winning bid amount.',
     },
     {
-      question: 'As a searcher, what are the benefits of using Artisan private pool?',
-      answer: 'You benefit from the best MEV opportunities and fine-tuned feedback/logs on your submitted bundles.',
+      question: 'As a searcher, what are the benefits of using Artisan private pool & Builder aggregator?',
+      answer: 'You benefit from the best MEV opportunities and fine-tuned feedback/logs on your submitted bundles. Additionnaly, we provide the most efficient access to block builders, letting you focus on your job, searching.',
     },
     //{
     //  question: 'What are the key specificities of Artisan private pool?',
@@ -144,7 +144,7 @@ export default async function IndexPage() {
           */}
           <ConnectRPC />
           <h1 className="font-heading text-3xl sm:text-5xl md:text-6xl lg:text-7xl">
-            The MEV Supply chain at your benefit
+            The First Block Builder Aggregator Network
           </h1>
           <p className="max-w-[42rem] leading-normal text-muted-foreground sm:text-xl sm:leading-8">
             As a <b>User</b>, submit your operations to our MEV-protected private mempool and benefit from MEV refunds.
@@ -176,8 +176,8 @@ export default async function IndexPage() {
             Services
           </h2>
           <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
-            Our research and development company, managed by Artisan DAO creates a suite products
-            and tools to participate in the thriving MEV Supply Chain.
+            Artisan Labs is a research and development company, creating Artisan suite products
+            and tools to take advantage of the thriving MEV Supply Chain.
           </p>
         </div>
 
@@ -186,9 +186,9 @@ export default async function IndexPage() {
             <Link href="/docs/rpcnode">
               <div className="flex h-[180px] flex-col justify-between rounded-md p-6">
                 <div className="space-y-2">
-                  <h3 className="font-bold ">RPC Node</h3>
+                  <h3 className="font-bold ">Refund RPC</h3>
                   <p className="text-sm text-muted-foreground">
-                    Access our protective RPC endpoint, submit your operations and benefit from MEV refunds.
+                    Access our protective Refund RPC endpoint, submit your operations and benefit from MEV refunds.
                   </p>
                 </div>
               </div>
@@ -200,12 +200,13 @@ export default async function IndexPage() {
               <div className="space-y-2">
                 <h3 className="font-bold">Artisan Private Pool</h3>
                 <p className="text-sm text-muted-foreground">
-                  A private mempool, rewarding end-users for submitting operations.
+                  An efficient searcher private mempool, powered by OFAs.
                 </p>
               </div>
             </div>
             </Link>
           </div>
+          {/*
           <div className="relative overflow-hidden rounded-lg border bg-background p-2">
             <Link href="/docs/bidsystem">
             <div className="flex h-[180px] flex-col justify-between rounded-md p-6">
@@ -218,13 +219,14 @@ export default async function IndexPage() {
             </div>
             </Link>
           </div>
+          */}
           <div className="relative overflow-hidden rounded-lg border bg-background p-2">
             <Link href="/docs/bundlesender">
             <div className="flex h-[180px] flex-col justify-between rounded-md p-6">
               <div className="space-y-2">
-                <h3 className="font-bold">Bundle Sender</h3>
+                <h3 className="font-bold">Builder Aggregator</h3>
                 <p className="text-sm text-muted-foreground">
-                  A dedicated endpoint that carefully distribute searchers bundles to block builders, so that they don&apos;t have to.
+                  An efficient aggregation endpoint that carefully distribute searchers bundles to block builders, so that they don&apos;t have to.
                 </p>
               </div>
             </div>
@@ -273,7 +275,7 @@ export default async function IndexPage() {
         </div>         
         <div className="mx-auto text-center md:max-w-[58rem]">
           <p className="leading-normal text-muted-foreground sm:text-lg sm:leading-7">
-            Artisan also includes a blog and a detailed documentation to easily use our tools.
+            Artisan also includes a blog and a detailed documentation to easily use our suite of tools.
           </p>
         </div>
       </section>
